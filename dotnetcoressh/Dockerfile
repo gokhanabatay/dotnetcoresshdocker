@@ -24,6 +24,6 @@ COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 WORKDIR /app
 COPY --from=builder /app/out .
 
-EXPOSE 80 22
+EXPOSE 80 2222
 
 ENTRYPOINT ["/usr/bin/supervisord"]
